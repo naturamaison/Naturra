@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATURA MAISON | لحسة طبيعية 100% لزيادة الوزن بطريقة صحية وآمنة</title>
+  <meta name="description" content="لحسة NATURA MAISON الصحراوية الطبيعية 100% بالمكسرات والأعشاب لزيادة الوزن بطريقة صحية وآمنة للنساء والرجال والمرضعات. توصيل مجاني والدفع عند الاستلام." />
+
+  <!-- استيراد خطوط Google Fonts العربية (Cairo و Tajawal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- تحميل مكتبة Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'Tajawal', 'sans-serif'],
+            tajawal: ['Tajawal', 'Cairo', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              pink: '#E52675',
+              berry: '#D81B60',
+              berryDark: '#B51450',
+              blush: '#FDF2F6',
+              blushCard: '#FCE4EE',
+              blushBorder: '#F7C6DA',
+              charcoal: '#24141C',
+              avocado: '#387642',
+              avocadoDark: '#2A5B32',
+              avocadoBg: '#EBF5EE',
+              avocadoBorder: '#C5E3CD',
+              gold: '#C88A2E',
+              goldBg: '#FDF4E3',
+            }
+          },
+          boxShadow: {
+            'soft': '0 10px 28px -6px rgba(36, 20, 28, 0.07)',
+            'pinkGlow': '0 12px 30px -6px rgba(229, 38, 117, 0.35)',
+            'avocadoSoft': '0 10px 26px -6px rgba(56, 118, 66, 0.22)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+      background-color: #FDF2F6;
+      color: #24141C;
+      overflow-x: hidden;
+    }
+
+    /* خلفية ناعمة مستوحاة من عبوات NATURA MAISON الوردية */
+    .blush-pattern {
+      background-color: #FDF2F6;
+      background-image:
+        radial-gradient(circle at 15% 12%, rgba(229, 38, 117, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 58%, rgba(200, 138, 46, 0.07) 0%, transparent 50%),
+        radial-gradient(circle at 50% 92%, rgba(252, 228, 238, 0.95) 0%, transparent 60%);
+    }
+
+    /* شريط العناوين الوردي المستوحى من ملصق العبوة */
+    .ribbon-gradient {
+      background: linear-gradient(135deg, #E52675 0%, #D81B60 100%);
+      box-shadow: 0 8px 20px -4px rgba(229, 38, 117, 0.38);
+    }
+
+    /* حركة نبض ناعمة لأزرار الطلب الرئيسية */
+    @keyframes ctaPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .animate-cta {
+      animation: ctaPulse 2.4s infinite ease-in-out;
+    }
+
+    /* حركة طفو خفيفة لشارة السعر */
+    @keyframes badgeFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    .animate-badge {
+      animation: badgeFloat 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="blush-pattern text-brand-charcoal antialiased selection:bg-brand-pink selection:text-white pb-24 sm:pb-24">
+
+  <!-- ===================================================================== -->
+  <!-- 1. الشريط العلوي الإعلاني (Top Announcement Bar)                      -->
+  <!-- ===================================================================== -->
+  <div class="bg-gradient-to-l from-brand-berry via-brand-pink to-brand-berry text-white py-2.5 px-3 text-center text-xs sm:text-sm font-extrabold shadow-sm sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto flex items-center justify-center gap-2">
+      <span>🚚 التوصيل متوفر ومجاني لجميع المدن المغربية — الدفع عند الاستلام</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. الهيدر الرئيسي مع شعار NATURA — MAISON —                          -->
+  <!-- ===================================================================== -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-brand-blushBorder shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <!-- شعار العلامة المرسوم بدقة (بورتريه جانبي + زهرة اللوتس + NATURA — MAISON —) -->
+      <a href="#top" class="flex items-center gap-2.5 group" aria-label="NATURA MAISON">
+        <svg class="w-16 h-12 sm:w-20 sm:h-14 shrink-0 transition-transform group-hover:scale-105" viewBox="0 0 180 148" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شعار NATURA MAISON">
+          <!-- بورتريه جانبي -->
+          <path d="M74 12C60 28 53 45 53 57C53 62 43 68 43 72C43 75 49 77 51 80C48 83 49 86 52 88C49 91 50 94 54 96C52 102 56 108 65 108H88C75 90 72 56 74 12Z" fill="#E52675" />
+          <path d="M82 32C82 61 86 88 99 108H109C96 86 91 58 82 32Z" fill="#E52675" />
+          <!-- بتلات زهرة اللوتس -->
+          <path d="M128 49C121 33 124 17 131 10C137 19 137 35 128 49Z" fill="#E52675" />
+          <path d="M122 53C105 47 93 36 90 26C102 26 115 36 122 53Z" fill="#E52675" />
+          <path d="M134 53C143 37 156 29 167 30C163 42 150 50 134 53Z" fill="#E52675" />
+          <path d="M132 60C147 56 161 60 169 70C157 74 143 71 132 60Z" fill="#E52675" />
+          <path d="M129 66C141 72 148 84 147 97C135 93 128 80 129 66Z" fill="#E52675" />
+          <path d="M118 72C110 78 106 88 109 96C116 91 120 81 118 72Z" fill="#D81B60" />
+          <!-- اسم العلامة NATURA — MAISON — -->
+          <text x="90" y="128" text-anchor="middle" fill="#E52675" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" letter-spacing="2.5">NATURA</text>
+          <line x1="22" y1="138" x2="52" y2="138" stroke="#E52675" stroke-width="2" stroke-linecap="round" />
+          <text x="90" y="142" text-anchor="middle" fill="#E52675" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="11.5" letter-spacing="3.5">MAISON</text>
+          <line x1="128" y1="138" x2="158" y2="138" stroke="#E52675" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <div>
+          <span class="block text-[11px] sm:text-xs font-black text-brand-berry bg-brand-blushCard px-2.5 py-0.5 rounded-full">
+            اللحسة الصحراوية الطبيعية 100%
+          </span>
+          <span class="block text-[11px] font-bold text-brand-charcoal/80 mt-1">
+            ⭐⭐⭐⭐⭐ 4.9/5 من زبناء حقيقيين
+          </span>
+        </div>
+      </a>
+
+      <!-- زر طلب سريع في الهيدر -->
+      <a
+        href="#order-form"
+        class="animate-cta inline-flex items-center justify-center gap-1.5 bg-brand-pink hover:bg-brand-berry text-white font-black text-xs sm:text-sm px-4 sm:px-5 py-3 rounded-xl shadow-pinkGlow transition-colors shrink-0"
+      >
+        <span>اطلبي الآن 🛒</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 3. الواجهة الرئيسية (Hero Section) بالصورة الحقيقية للمنتج            -->
+  <!-- ===================================================================== -->
+  <section id="top" class="pt-6 pb-10 sm:py-12 px-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- العمود النصي -->
+      <div class="lg:col-span-6 text-center lg:text-right space-y-4">
+        <!-- شارة التقييم -->
+        <div class="inline-flex items-center gap-2 bg-white border border-brand-blushBorder px-4 py-1.5 rounded-full shadow-sm">
+          <span class="text-xs sm:text-sm font-black text-brand-berry">
+            ⭐⭐⭐⭐⭐ 4.9/5 من زبناء حقيقيين
+          </span>
+        </div>
+
+        <!-- العنوان الرئيسي -->
+        <h1 class="text-[26px] sm:text-4xl lg:text-[40px] font-black text-brand-charcoal leading-[1.32]">
+          بغيتي تزيدي فالوزن بطريقة صحية و آمنة و بلا أضرار ؟ الحل عندنا 👇
+        </h1>
+
+        <!-- العنوان الفرعي -->
+        <p class="text-sm sm:text-lg font-extrabold text-brand-charcoal/90 bg-white/95 border border-brand-blushBorder rounded-2xl p-4 shadow-soft leading-relaxed">
+          🌿 <strong class="text-brand-pink">لحسة NATURA MAISON – الطبيعية 100%</strong> وصفة صحراوية غنية بالمكسرات والأعشاب الطبيعية لفتح الشهية وزيادة الوزن بكل أمان.
+        </p>
+
+        <!-- أزرار الدعوة لاتخاذ إجراء (CTAs) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-1">
+          <a
+            href="#order-form"
+            class="animate-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-berry text-white font-black text-base sm:text-lg px-7 py-4 rounded-2xl shadow-pinkGlow transition-all"
+          >
+            <span>اطلبي الآن — الدفع عند الاستلام</span>
+          </a>
+
+          <a
+            href="#order-form"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-blushCard text-brand-pink border-2 border-brand-pink/35 font-black text-sm sm:text-base px-6 py-4 rounded-2xl shadow-sm transition-colors"
+          >
+            <span>اكتشفي العروض الثلاثة 👇</span>
+          </a>
+        </div>
+
+        <!-- شارات الثقة السريعة -->
+        <div class="grid grid-cols-3 gap-2 sm:gap-3 pt-2">
+          <div class="bg-white border border-brand-blushBorder rounded-2xl p-3 text-center shadow-sm">
+            <span class="block text-xl mb-1">🌿</span>
+            <span class="block text-xs sm:text-sm font-black text-brand-charcoal">طبيعية 100%</span>
+          </div>
+          <div class="bg-white border border-brand-blushBorder rounded-2xl p-3 text-center shadow-sm">
+            <span class="block text-xl mb-1">🚚</span>
+            <span class="block text-xs sm:text-sm font-black text-brand-charcoal">توصيل مجاني</span>
+          </div>
+          <div class="bg-white border border-brand-blushBorder rounded-2xl p-3 text-center shadow-sm">
+            <span class="block text-xl mb-1">🤝</span>
+            <span class="block text-xs sm:text-sm font-black text-brand-charcoal">الدفع عند الاستلام</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- الصورة الحقيقية الرئيسية للمنتج (3 علب على خلفية وردية مع مكسرات وشوكولاتة) -->
+      <div class="lg:col-span-6">
+        <div class="relative max-w-md mx-auto">
+          <!-- شارة السعر العائمة -->
+          <div class="animate-badge absolute -top-3 right-3 z-20 bg-white border-2 border-brand-pink rounded-2xl px-4 py-2 shadow-pinkGlow text-center">
+            <span class="block text-xs font-bold text-gray-400 line-through">330 درهم</span>
+            <span class="block text-xl sm:text-2xl font-black text-brand-pink leading-tight">279 درهم</span>
+            <span class="block text-[11px] font-extrabold text-brand-avocado bg-brand-avocadoBg px-2.5 py-0.5 rounded-full mt-0.5">
+              توصيل مجاني 🚚
+            </span>
+          </div>
+
+          <div class="rounded-3xl overflow-hidden border-4 border-white shadow-soft bg-brand-blushCard">
+            <img
+              src="https://i.postimg.cc/cJXqH7C5/A690F985-23C6-42B8-9757-850CAC5E6D07.jpg"
+              alt="لحسة NATURA MAISON الصحراوية الطبيعية 100% بالمكسرات والشوكولاتة"
+              class="w-full h-auto object-cover rounded-2xl block"
+              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+            />
+            <!-- بديل SVG احتياطي يظهر فقط إذا تعذر تحميل الصورة -->
+            <div class="hidden p-10 text-center bg-gradient-to-b from-brand-blushCard to-brand-blush">
+              <svg class="w-32 h-32 mx-auto" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="28" y="20" width="64" height="82" rx="14" fill="#A66F1E" stroke="#E52675" stroke-width="3" />
+                <rect x="33" y="42" width="54" height="42" rx="6" fill="#FFFFFF" />
+                <text x="60" y="65" text-anchor="middle" fill="#E52675" font-weight="bold" font-size="10">NATURA MAISON</text>
+              </svg>
+              <p class="text-sm font-black text-brand-berry mt-2">لحسة NATURA MAISON الطبيعية 100%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. قسم التعريف بالمنتج: "✨ شنو هي اللحسة ديالنا ؟"                   -->
+  <!-- ===================================================================== -->
+  <section class="py-10 sm:py-14 px-4 bg-white border-y border-brand-blushBorder">
+    <div class="max-w-3xl mx-auto text-center space-y-4">
+      <span class="inline-block bg-brand-blushCard text-brand-berry text-xs sm:text-sm font-black px-4 py-1 rounded-full">
+        وصفة طبيعية أصيلة ومضمونة
+      </span>
+      <h2 class="text-2xl sm:text-3xl font-black text-brand-charcoal">
+        ✨ شنو هي اللحسة ديالنا ؟
+      </h2>
+      <p class="text-base sm:text-lg font-bold text-brand-charcoal/90 leading-relaxed bg-brand-blush border-2 border-brand-blushBorder rounded-3xl p-6 shadow-soft">
+        لحسة طبيعية 100% و آمنة، مصاوبة بمكونات مختارة بعناية و بمقاييس مضبوطة، عبارة على مجموعة من المكسرات و الأعشاب الطبيعية اللي معروفة بالفوائد ديالها.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. قسم الفوائد الثلاث: "💪 شنو كدير ؟"                               -->
+  <!-- ===================================================================== -->
+  <section class="py-10 sm:py-14 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <div class="ribbon-gradient inline-block text-white px-7 py-2.5 rounded-2xl">
+          <h2 class="text-xl sm:text-2xl font-black">💪 شنو كدير ؟</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- البطاقة 1 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-brand-blushBorder shadow-soft text-center hover:-translate-y-1 transition-transform">
+          <div class="w-16 h-16 rounded-2xl bg-brand-blushCard text-brand-pink flex items-center justify-center mx-auto mb-4">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-brand-berry mb-2">فتح الشهية وزيادة الوزن</h3>
+          <p class="text-sm sm:text-base font-bold text-brand-charcoal/85 leading-relaxed">
+            كتفتح الشهية و كتعاون على زيادة الوزن بطريقة صحية و طبيعية
+          </p>
+        </div>
+
+        <!-- البطاقة 2 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-brand-blushBorder shadow-soft text-center hover:-translate-y-1 transition-transform">
+          <div class="w-16 h-16 rounded-2xl bg-brand-goldBg text-brand-gold flex items-center justify-center mx-auto mb-4">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-brand-gold mb-2">طاقة وحيوية طول النهار</h3>
+          <p class="text-sm sm:text-base font-bold text-brand-charcoal/85 leading-relaxed">
+            كتعطي طاقة و نشاط و حيوية طول النهار
+          </p>
+        </div>
+
+        <!-- البطاقة 3 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-brand-blushBorder shadow-soft text-center hover:-translate-y-1 transition-transform">
+          <div class="w-16 h-16 rounded-2xl bg-brand-blushCard text-brand-pink flex items-center justify-center mx-auto mb-4">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-brand-berry mb-2">تغذية البشرة وتقوية الشعر</h3>
+          <p class="text-sm sm:text-base font-bold text-brand-charcoal/85 leading-relaxed">
+            كتغذي البشرة و كتزيدها نضارة، و كتقوي الشعر من الداخل حيت فيها مكونات كتغذي البشرة و الشعر
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. اختيار الفئة المعنية التفاعلي ("👩‍👩‍👦 شكون يقدر ياخدها ؟")          -->
+  <!-- ===================================================================== -->
+  <section id="audience-section" class="py-10 sm:py-14 px-4 bg-white border-y border-brand-blushBorder">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-7">
+        <span class="inline-block bg-brand-blushCard text-brand-berry text-xs sm:text-sm font-black px-4 py-1 rounded-full mb-2">
+          اختاري الفئة المناسبة ليك
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-brand-charcoal mb-2">
+          👩‍👩‍👦 شكون يقدر ياخدها ؟
+        </h2>
+        <p class="text-sm sm:text-base font-extrabold text-brand-charcoal/85">
+          مناسبة للنساء، و حتى للرجال، و آمنة حتى على المرأة المرضعة.
+        </p>
+      </div>
+
+      <!-- 3 بطاقات تفاعلية قابلة للنقر: امرأة / رجل / مرضعة طفل -->
+      <div class="grid grid-cols-3 gap-2.5 sm:gap-5 mb-5" role="radiogroup" aria-label="اختيار الفئة المعنية">
+        
+        <!-- 1. بطاقة: امرأة (مختارة افتراضياً) -->
+        <button
+          type="button"
+          data-audience="امرأة"
+          class="audience-card cursor-pointer rounded-3xl p-3.5 sm:p-5 border-2 border-brand-pink bg-brand-blushCard/80 shadow-soft flex flex-col items-center text-center transition-all focus:outline-none"
+          aria-pressed="true"
+        >
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border border-brand-blushBorder flex items-center justify-center mb-2.5 shadow-sm">
+            <svg class="w-12 h-12 sm:w-14 sm:h-14" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 30C18 18 24 10 32 10C40 10 46 18 46 30C46 38 48 44 50 48H14C16 44 18 38 18 30Z" fill="#E52675" />
+              <circle cx="32" cy="27" r="10" fill="#FAD7C8" />
+              <path d="M22 25C25 22 30 19 32 17C34 19 39 22 42 25" stroke="#B51450" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M16 56C18 46 24 41 32 41C40 41 46 46 48 56H16Z" fill="#F498C0" />
+            </svg>
+          </div>
+          <span class="text-sm sm:text-lg font-black text-brand-charcoal">امرأة</span>
+          <span class="audience-badge mt-1.5 text-[10px] sm:text-xs font-extrabold bg-brand-pink text-white px-2.5 py-0.5 rounded-full">
+            ✓ مختارة
+          </span>
+        </button>
+
+        <!-- 2. بطاقة: رجل -->
+        <button
+          type="button"
+          data-audience="رجل"
+          class="audience-card cursor-pointer rounded-3xl p-3.5 sm:p-5 border-2 border-brand-blushBorder bg-brand-blush/60 hover:border-brand-pink/50 flex flex-col items-center text-center transition-all focus:outline-none"
+          aria-pressed="false"
+        >
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border border-brand-blushBorder flex items-center justify-center mb-2.5 shadow-sm">
+            <svg class="w-12 h-12 sm:w-14 sm:h-14" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 24C21 15 26 11 32 11C38 11 43 15 43 24H21Z" fill="#24141C" />
+              <circle cx="32" cy="26" r="10" fill="#F5C6B3" />
+              <path d="M26 30C28 33 36 33 38 30" stroke="#24141C" stroke-width="2" stroke-linecap="round" />
+              <path d="M13 56C15 44 22 39 32 39C42 39 49 44 51 56H13Z" fill="#387642" />
+              <path d="M27 39L32 46L37 39" fill="#FFFFFF" />
+            </svg>
+          </div>
+          <span class="text-sm sm:text-lg font-black text-brand-charcoal">رجل</span>
+          <span class="audience-badge mt-1.5 text-[10px] sm:text-xs font-extrabold bg-white text-brand-charcoal/75 border border-brand-blushBorder px-2.5 py-0.5 rounded-full">
+            اضغط للاختيار
+          </span>
+        </button>
+
+        <!-- 3. بطاقة: مرضعة طفل -->
+        <button
+          type="button"
+          data-audience="مرضعة طفل"
+          class="audience-card cursor-pointer rounded-3xl p-3.5 sm:p-5 border-2 border-brand-blushBorder bg-brand-blush/60 hover:border-brand-pink/50 flex flex-col items-center text-center transition-all focus:outline-none"
+          aria-pressed="false"
+        >
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border border-brand-blushBorder flex items-center justify-center mb-2.5 shadow-sm">
+            <svg class="w-12 h-12 sm:w-14 sm:h-14" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 26C14 15 20 9 27 9C34 9 39 15 39 26V36H14V26Z" fill="#D81B60" />
+              <circle cx="27" cy="23" r="8.5" fill="#FAD7C8" />
+              <path d="M12 56C13 44 19 38 28 38C36 38 42 43 45 56H12Z" fill="#E52675" />
+              <circle cx="41" cy="36" r="6.5" fill="#FDE2D5" />
+              <path d="M31 46C34 42 44 42 49 48C45 53 35 53 31 46Z" fill="#EBF5EE" stroke="#387642" stroke-width="1.5" />
+              <path d="M46 21C46 19.3 47.5 18 49 18C50.2 18 51 18.8 51.5 19.6C52 18.8 52.8 18 54 18C55.5 18 57 19.3 57 21C57 23.5 51.5 27 51.5 27C51.5 27 46 23.5 46 21Z" fill="#E52675" />
+            </svg>
+          </div>
+          <span class="text-sm sm:text-lg font-black text-brand-charcoal">مرضعة طفل</span>
+          <span class="audience-badge mt-1.5 text-[10px] sm:text-xs font-extrabold bg-white text-brand-charcoal/75 border border-brand-blushBorder px-2.5 py-0.5 rounded-full">
+            اضغط للاختيار
+          </span>
+        </button>
+
+      </div>
+
+      <!-- مربع النصيحة المخصصة حسب الفئة المختارة -->
+      <div class="bg-brand-blush border-2 border-brand-pink/35 rounded-2xl p-4 sm:p-5 text-center shadow-sm">
+        <span class="inline-block text-xs font-black text-brand-berry bg-white px-3 py-0.5 rounded-full border border-brand-blushBorder mb-1.5">
+          الفئة المحددة للطلب: <strong id="audience-selected-title">امرأة</strong>
+        </span>
+        <p id="audience-selected-desc" class="text-sm sm:text-base font-extrabold text-brand-charcoal">
+          معلقة كبيرة ورا كل وجبة لزيادة الوزن ونضارة البشرة والشعر بشكل طبيعي.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. معرض صور المنتوج والمكونات الطبيعية                                -->
+  <!-- ===================================================================== -->
+  <section class="py-10 sm:py-14 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-3xl p-4 sm:p-6 border-2 border-brand-blushBorder shadow-soft space-y-5">
+        <div class="text-center">
+          <span class="inline-block bg-brand-blushCard text-brand-berry text-xs sm:text-sm font-black px-4 py-1 rounded-full mb-2">
+            جودة عالية ومكونات طبيعية 100%
+          </span>
+          <h2 class="text-xl sm:text-2xl font-black text-brand-charcoal">
+            عبوات NATURA MAISON الأصلية المحضرة بعناية 🌿
+          </h2>
+        </div>
+
+        <!-- صورة المعرض الثانية الحقيقية (عبوات الأغطية الحمراء والفوانيس والورد) -->
+        <div class="rounded-2xl overflow-hidden border-2 border-brand-blushBorder bg-brand-blush max-w-2xl mx-auto">
+          <img
+            src="https://i.postimg.cc/bNkwvMPz/IMG-8898.jpg"
+            alt="عبوات لحسة NATURA MAISON بالأغطية الحمراء والمكسرات والأعشاب"
+            class="w-full h-auto object-cover rounded-2xl block"
+            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden p-8 text-center bg-brand-blushCard">
+            <p class="text-sm font-black text-brand-berry">عبوات NATURA MAISON الأصلية بالمكسرات والأعشاب</p>
+          </div>
+        </div>
+
+        <!-- شارات المكونات الطبيعية -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+          <div class="bg-brand-blush border border-brand-blushBorder rounded-2xl p-3.5 text-center flex items-center justify-center gap-2">
+            <span class="text-xl">🌰</span>
+            <span class="text-sm font-black text-brand-charcoal">مكسرات محمصة</span>
+          </div>
+          <div class="bg-brand-avocadoBg border border-brand-avocadoBorder rounded-2xl p-3.5 text-center flex items-center justify-center gap-2">
+            <span class="text-xl">🌿</span>
+            <span class="text-sm font-black text-brand-avocadoDark">أعشاب طبيعية</span>
+          </div>
+          <div class="bg-brand-goldBg border border-brand-gold/30 rounded-2xl p-3.5 text-center flex items-center justify-center gap-2">
+            <span class="text-xl">🍯</span>
+            <span class="text-sm font-black text-brand-charcoal">عسل وشوكولاتة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. طريقة الاستعمال اليومية + معزز عصير الأفوكادو                     -->
+  <!-- ===================================================================== -->
+  <section class="py-10 sm:py-14 px-4 bg-white border-y border-brand-blushBorder">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+      
+      <!-- بطاقة طريقة الاستعمال اليومية -->
+      <div class="bg-brand-blush rounded-3xl p-6 sm:p-7 border-2 border-brand-blushBorder shadow-soft flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-12 rounded-2xl bg-white border border-brand-blushBorder text-2xl flex items-center justify-center shrink-0 shadow-sm">🥄</span>
+            <h2 class="text-xl sm:text-2xl font-black text-brand-charcoal">
+              🥄 طريقة الاستعمال:
+            </h2>
+          </div>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="bg-white border border-brand-blushBorder rounded-2xl p-4 flex items-start gap-3">
+              <span class="w-8 h-8 rounded-xl bg-brand-pink text-white font-black flex items-center justify-center shrink-0 text-sm">👩</span>
+              <div>
+                <span class="block text-xs font-extrabold text-brand-berry">الجرعة للنساء والمرضعات:</span>
+                <p class="text-sm sm:text-base font-black text-brand-charcoal mt-0.5">
+                  • للنساء: معلقة كبيرة ورا كل وجبة
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-brand-blushBorder rounded-2xl p-4 flex items-start gap-3">
+              <span class="w-8 h-8 rounded-xl bg-brand-charcoal text-white font-black flex items-center justify-center shrink-0 text-sm">👨</span>
+              <div>
+                <span class="block text-xs font-extrabold text-brand-charcoal/80">الجرعة للرجال:</span>
+                <p class="text-sm sm:text-base font-black text-brand-charcoal mt-0.5">
+                  • للرجال: معلقة كبيرة ورا كل وجبة + 3 معالق كبار ورا العشاء
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ribbon-gradient text-white text-center font-black text-sm sm:text-base py-3.5 px-4 rounded-2xl">
+          طبيعية، آمنة، و النتيجة كتبان مع المداومة. ✨
+        </div>
+      </div>
+
+      <!-- بطاقة عصير الأفوكادو باللون الأخضر الطبيعي (#387642 / #EBF5EE) -->
+      <div class="bg-brand-avocadoBg rounded-3xl p-6 sm:p-7 border-2 border-brand-avocado/40 shadow-avocadoSoft flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-12 h-12 rounded-2xl bg-white border border-brand-avocadoBorder text-2xl flex items-center justify-center shrink-0 shadow-sm">🥑</span>
+            <div>
+              <span class="inline-block text-[11px] font-black text-brand-avocadoDark bg-white px-2.5 py-0.5 rounded-full border border-brand-avocadoBorder mb-0.5">
+                سر النتيجة السريعة
+              </span>
+              <h2 class="text-xl sm:text-2xl font-black text-brand-avocadoDark">
+                🌿 لنتائج أسرع وأفضل:
+              </h2>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm font-bold text-brand-charcoal leading-relaxed bg-white p-4 rounded-2xl border border-brand-avocadoBorder mb-4">
+            للحصول على نتائج مُرضية وسريعة، يُنصح بالاعتماد في الوجبات اليومية على النشويات والدهنيات الصحية والعصائر، وخاصة عصير الأفوكادو. وذلك لأن الأفوكادو مشبع بالدهون الصحية، ويساعد الوصفة على إعطاء نتائج مُرضية وسريعة.
+          </p>
+
+          <div class="mb-5">
+            <h3 class="text-base sm:text-lg font-black text-brand-avocadoDark mb-2">
+              🥑 طريقة الاستعمال مع عصير الأفوكادو:
+            </h3>
+            <p class="text-xs sm:text-sm font-extrabold text-brand-charcoal mb-2">
+              يجب شرب كأس من عصير الأفوكادو:
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm font-bold text-brand-charcoal">
+              <li class="bg-white p-3 rounded-xl border border-brand-avocadoBorder flex items-start gap-2">
+                <span class="text-brand-avocado font-black">•</span>
+                <span>إما بعد الفطور، بعد تناول ملعقة من اللحسة</span>
+              </li>
+              <li class="bg-white p-3 rounded-xl border border-brand-avocadoBorder flex items-start gap-2">
+                <span class="text-brand-avocado font-black">•</span>
+                <span>أو بعد وجبة العشاء، بعد تناول ملعقتين من اللحسة</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-brand-avocado text-white text-center font-black text-sm sm:text-base py-3.5 px-4 rounded-2xl shadow-sm">
+          اللحسة + عصير الأفوكادو = نتيجة أسرع وأفضل إن شاء الله ✨
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. قسم آراء الزبناء ("⭐ آراء زبائننا الحقيقيين")                    -->
+  <!-- ===================================================================== -->
+  <section class="py-10 sm:py-14 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="inline-block bg-white text-brand-berry border border-brand-blushBorder text-xs sm:text-sm font-black px-4 py-1 rounded-full mb-2">
+          تقييم 4.9/5 على مستوى المغرب
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-brand-charcoal">
+          ⭐ آراء زبائننا الحقيقيين
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        
+        <!-- تقييم 1: امرأة -->
+        <article class="bg-white rounded-3xl p-5 border border-brand-blushBorder shadow-soft space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-11 h-11 rounded-full bg-brand-blushCard text-brand-berry font-black flex items-center justify-center text-base">
+                س
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-brand-charcoal">سلمى ب. — الدار البيضاء</h3>
+                <span class="text-[11px] font-bold text-brand-berry">فئة: امرأة 👩</span>
+              </div>
+            </div>
+            <span class="bg-brand-avocadoBg text-brand-avocadoDark text-[11px] font-black px-2.5 py-1 rounded-full shrink-0">
+              شراء مؤكد ✓
+            </span>
+          </div>
+          <div class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</div>
+          <p class="text-xs sm:text-sm font-bold text-brand-charcoal/85 leading-relaxed">
+            "مذاقها رائع بالمكسرات والشوكولاتة، ما فيها حتى ريحة خايبة بحال الوصفات الأخرى. من السيمانة الثانية تحلات ليا الشهية وبان الفرق فوزني ونضارة وجهي بطريقة طبيعية وزوينة بزاف."
+          </p>
+        </article>
+
+        <!-- تقييم 2: مرضعة طفل -->
+        <article class="bg-white rounded-3xl p-5 border border-brand-blushBorder shadow-soft space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-11 h-11 rounded-full bg-brand-blushCard text-brand-berry font-black flex items-center justify-center text-base">
+                خ
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-brand-charcoal">خديجة م. — مراكش</h3>
+                <span class="text-[11px] font-bold text-brand-avocadoDark">فئة: مرضعة طفل 🤱</span>
+              </div>
+            </div>
+            <span class="bg-brand-avocadoBg text-brand-avocadoDark text-[11px] font-black px-2.5 py-1 rounded-full shrink-0">
+              شراء مؤكد ✓
+            </span>
+          </div>
+          <div class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</div>
+          <p class="text-xs sm:text-sm font-bold text-brand-charcoal/85 leading-relaxed">
+            "كنت كنرضع وضعافيت بزاف وكنخاف ناخد أي حاجة، ملي جربت لحسة NATURA MAISON لقيتها طبيعية 100% وآمنة عليا وعلى ولدي، وزادتني طاقة وإدرار الحليب مع زيادة الوزن."
+          </p>
+        </article>
+
+        <!-- تقييم 3: رجل -->
+        <article class="bg-white rounded-3xl p-5 border border-brand-blushBorder shadow-soft space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-11 h-11 rounded-full bg-brand-charcoal text-white font-black flex items-center justify-center text-base">
+                ي
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-brand-charcoal">يوسف ك. — الرباط</h3>
+                <span class="text-[11px] font-bold text-brand-charcoal">فئة: رجل 👨</span>
+              </div>
+            </div>
+            <span class="bg-brand-avocadoBg text-brand-avocadoDark text-[11px] font-black px-2.5 py-1 rounded-full shrink-0">
+              شراء مؤكد ✓
+            </span>
+          </div>
+          <div class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</div>
+          <p class="text-xs sm:text-sm font-bold text-brand-charcoal/85 leading-relaxed">
+            "خديت العرض ديال 2 علب وتبعت الجرعة ديال الرجال مع كأس عصير الأفوكادو ورا العشاء. نتيجة ممتازة وطاقة كبيرة فالخدمة والرياضة."
+          </p>
+        </article>
+
+        <!-- تقييم 4: توصيل سريع -->
+        <article class="bg-white rounded-3xl p-5 border border-brand-blushBorder shadow-soft space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-11 h-11 rounded-full bg-brand-blushCard text-brand-berry font-black flex items-center justify-center text-base">
+                م
+              </div>
+              <div>
+                <h3 class="text-sm font-black text-brand-charcoal">مريم ع. — طنجة</h3>
+                <span class="text-[11px] font-bold text-brand-berry">فئة: امرأة 👩</span>
+              </div>
+            </div>
+            <span class="bg-brand-avocadoBg text-brand-avocadoDark text-[11px] font-black px-2.5 py-1 rounded-full shrink-0">
+              شراء مؤكد ✓
+            </span>
+          </div>
+          <div class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</div>
+          <p class="text-xs sm:text-sm font-bold text-brand-charcoal/85 leading-relaxed">
+            "التوصيل كان سريع ومجاني حتى لباب الدار والدفع عند الاستلام. لاحظت فرق كبير فالنضارة ديال البشرة وحتى شعري تقوى من الداخل. شكراً NATURA MAISON."
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 10. نموذج الطلب السريع (COD) بالعروض الثلاثة والربط بـ 0641086290     -->
+  <!-- ===================================================================== -->
+  <section id="order-form" class="py-10 sm:py-14 px-4 bg-brand-blushCard/75 border-t border-brand-blushBorder">
+    <div class="max-w-xl mx-auto">
+      <div class="bg-white rounded-3xl border-2 border-brand-pink/45 shadow-soft overflow-hidden">
+        
+        <!-- رأس النموذج -->
+        <div class="ribbon-gradient text-white text-center py-5 px-4">
+          <h2 class="text-xl sm:text-2xl font-black">
+            اطلبي الآن — الدفع عند الاستلام 🇲🇦
+          </h2>
+          <p class="text-xs sm:text-sm font-bold text-white/95 mt-1">
+            عمّري معلوماتك لتحت وغادي يتأكد طلبك مباشرة عبر الواتساب
+          </p>
+        </div>
+
+        <div class="p-5 sm:p-7">
+          <form id="orderForm" novalidate class="space-y-5">
+            
+            <!-- 1. اختيار/تأكيد الفئة المعنية -->
+            <div>
+              <label class="block text-xs sm:text-sm font-black text-brand-charcoal mb-2">
+                1. الفئة المعنية: <span class="text-brand-pink">*</span>
+              </label>
+              <div class="grid grid-cols-3 gap-2">
+                <button
+                  type="button"
+                  data-form-audience="امرأة"
+                  class="form-audience-btn cursor-pointer rounded-2xl py-2.5 px-2 border-2 border-brand-pink bg-brand-blushCard text-brand-berry font-black text-xs sm:text-sm flex flex-col items-center gap-1 transition-all"
+                >
+                  <span class="text-lg">👩</span>
+                  <span>امرأة</span>
+                </button>
+                <button
+                  type="button"
+                  data-form-audience="رجل"
+                  class="form-audience-btn cursor-pointer rounded-2xl py-2.5 px-2 border-2 border-gray-200 bg-gray-50 text-brand-charcoal font-black text-xs sm:text-sm flex flex-col items-center gap-1 transition-all"
+                >
+                  <span class="text-lg">👨</span>
+                  <span>رجل</span>
+                </button>
+                <button
+                  type="button"
+                  data-form-audience="مرضعة طفل"
+                  class="form-audience-btn cursor-pointer rounded-2xl py-2.5 px-2 border-2 border-gray-200 bg-gray-50 text-brand-charcoal font-black text-xs sm:text-sm flex flex-col items-center gap-1 transition-all"
+                >
+                  <span class="text-lg">🤱</span>
+                  <span>مرضعة طفل</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. اختيار العرض من العروض الثلاثة -->
+            <div>
+              <label class="block text-xs sm:text-sm font-black text-brand-charcoal mb-2.5">
+                2. اختاري العرض المناسب ليك: <span class="text-brand-pink">*</span>
+              </label>
+              <div class="space-y-3">
+                
+                <!-- العرض الأول: علبة واحدة - 279 درهم -->
+                <label class="form-offer-label cursor-pointer block rounded-2xl border-2 border-gray-200 bg-gray-50/70 p-3.5 transition-all hover:border-brand-pink/40">
+                  <input
+                    type="radio"
+                    name="offerChoice"
+                    value="offer1"
+                    data-price="279"
+                    data-label="العرض الأول: علبة واحدة (279 درهم)"
+                    class="sr-only form-offer-radio"
+                  />
+                  <div class="flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                      <span class="offer-dot-outer w-5 h-5 rounded-full border-2 border-gray-400 flex items-center justify-center shrink-0">
+                        <span class="offer-dot-inner w-2.5 h-2.5 rounded-full bg-brand-pink scale-0 transition-transform"></span>
+                      </span>
+                      <div>
+                        <span class="block text-sm font-black text-brand-charcoal">العرض الأول: علبة واحدة</span>
+                        <span class="block text-[11px] font-extrabold text-brand-avocado">توصيل مجاني 🚚</span>
+                      </div>
+                    </div>
+                    <span class="text-lg font-black text-brand-charcoal shrink-0">279 درهم</span>
+                  </div>
+                </label>
+
+                <!-- العرض الثاني (الأكثر طلباً 🔥): 2 علب - 494 درهم (افتراضي) -->
+                <label class="form-offer-label cursor-pointer relative block rounded-2xl border-2 border-brand-pink bg-brand-blushCard/75 p-3.5 pt-4 shadow-sm transition-all">
+                  <span class="absolute -top-2.5 right-3 bg-brand-pink text-white text-[10px] font-black px-3 py-0.5 rounded-full shadow-sm">
+                    الأكثر طلباً 🔥
+                  </span>
+                  <input
+                    type="radio"
+                    name="offerChoice"
+                    value="offer2"
+                    data-price="494"
+                    data-label="العرض الثاني: 2 علب (494 درهم)"
+                    checked
+                    class="sr-only form-offer-radio"
+                  />
+                  <div class="flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                      <span class="offer-dot-outer w-5 h-5 rounded-full border-2 border-brand-pink flex items-center justify-center shrink-0">
+                        <span class="offer-dot-inner w-2.5 h-2.5 rounded-full bg-brand-pink scale-100 transition-transform"></span>
+                      </span>
+                      <div>
+                        <span class="block text-sm font-black text-brand-charcoal">العرض الثاني: 2 علب</span>
+                        <span class="block text-[11px] font-extrabold text-brand-avocado">توصيل مجاني 🚚</span>
+                      </div>
+                    </div>
+                    <div class="text-left shrink-0">
+                      <span class="block text-lg font-black text-brand-berry">494 درهم</span>
+                      <span class="block text-[10px] font-bold text-gray-400 line-through">558 درهم</span>
+                    </div>
+                  </div>
+                </label>
+
+                <!-- العرض الثالث (عرض التوفير العائلي): 3 علب - 699 درهم -->
+                <label class="form-offer-label cursor-pointer relative block rounded-2xl border-2 border-gray-200 bg-gray-50/70 p-3.5 pt-4 transition-all hover:border-brand-pink/40">
+                  <span class="absolute -top-2.5 right-3 bg-brand-gold text-white text-[10px] font-black px-3 py-0.5 rounded-full shadow-sm">
+                    عرض التوفير العائلي
+                  </span>
+                  <input
+                    type="radio"
+                    name="offerChoice"
+                    value="offer3"
+                    data-price="699"
+                    data-label="العرض الثالث: 3 علب (699 درهم)"
+                    class="sr-only form-offer-radio"
+                  />
+                  <div class="flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                      <span class="offer-dot-outer w-5 h-5 rounded-full border-2 border-gray-400 flex items-center justify-center shrink-0">
+                        <span class="offer-dot-inner w-2.5 h-2.5 rounded-full bg-brand-pink scale-0 transition-transform"></span>
+                      </span>
+                      <div>
+                        <span class="block text-sm font-black text-brand-charcoal">العرض الثالث: 3 علب</span>
+                        <span class="block text-[11px] font-extrabold text-brand-avocado">توصيل مجاني 🚚</span>
+                      </div>
+                    </div>
+                    <div class="text-left shrink-0">
+                      <span class="block text-lg font-black text-brand-charcoal">699 درهم</span>
+                      <span class="block text-[10px] font-bold text-gray-400 line-through">837 درهم</span>
+                    </div>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- 3. خانات معلومات التوصيل -->
+            <div class="space-y-3.5">
+              <div>
+                <label for="fullName" class="block text-xs sm:text-sm font-black text-brand-charcoal mb-1">
+                  الاسم الكامل <span class="text-brand-pink">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="أدخل الاسم الكامل"
+                  required
+                  class="w-full bg-brand-blush/60 border-2 border-brand-blushBorder focus:border-brand-pink focus:bg-white focus:outline-none rounded-2xl px-4 py-3 text-sm font-bold text-brand-charcoal placeholder-gray-400 transition-colors"
+                />
+                <p id="errName" class="hidden text-xs font-bold text-red-600 mt-1">عافاك دخل الاسم الكامل ديالك.</p>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-xs sm:text-sm font-black text-brand-charcoal mb-1">
+                  رقم الهاتف (واتساب) <span class="text-brand-pink">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  dir="ltr"
+                  placeholder="06 XX XX XX XX"
+                  required
+                  class="w-full text-right bg-brand-blush/60 border-2 border-brand-blushBorder focus:border-brand-pink focus:bg-white focus:outline-none rounded-2xl px-4 py-3 text-sm font-bold text-brand-charcoal placeholder-gray-400 transition-colors"
+                />
+                <p id="errPhone" class="hidden text-xs font-bold text-red-600 mt-1">عافاك دخل رقم هاتف مغربي صحيح يبدأ بـ 06 أو 07 (10 أرقام).</p>
+              </div>
+
+              <div>
+                <label for="city" class="block text-xs sm:text-sm font-black text-brand-charcoal mb-1">
+                  المدينة والعنوان <span class="text-brand-pink">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  list="citiesList"
+                  placeholder="مثال: الدار البيضاء - حي المعاريف"
+                  required
+                  class="w-full bg-brand-blush/60 border-2 border-brand-blushBorder focus:border-brand-pink focus:bg-white focus:outline-none rounded-2xl px-4 py-3 text-sm font-bold text-brand-charcoal placeholder-gray-400 transition-colors"
+                />
+                <datalist id="citiesList">
+                  <option value="الدار البيضاء"></option>
+                  <option value="الرباط"></option>
+                  <option value="مراكش"></option>
+                  <option value="فاس"></option>
+                  <option value="طنجة"></option>
+                  <option value="أكادير"></option>
+                  <option value="مكناس"></option>
+                  <option value="وجدة"></option>
+                  <option value="القنيطرة"></option>
+                  <option value="تطوان"></option>
+                  <option value="العيون"></option>
+                  <option value="الداخلة"></option>
+                  <option value="بني ملال"></option>
+                  <option value="آسفي"></option>
+                </datalist>
+                <p id="errCity" class="hidden text-xs font-bold text-red-600 mt-1">عافاك اكتب المدينة والعنوان فين توصلك الأمانة.</p>
+              </div>
+            </div>
+
+            <!-- ملخص الطلب المباشر -->
+            <div class="bg-brand-blush border border-brand-blushBorder rounded-2xl p-4 space-y-2 text-xs sm:text-sm">
+              <div class="flex items-center justify-between gap-2">
+                <span class="font-bold text-brand-charcoal/75">العرض المختار:</span>
+                <span id="summaryOffer" class="font-black text-brand-charcoal text-left">العرض الثاني: 2 علب (494 درهم)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-brand-charcoal/75">الفئة المعنية:</span>
+                <span id="summaryAudience" class="font-black text-brand-berry">امرأة</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-brand-charcoal/75">مصاريف التوصيل:</span>
+                <span class="font-black text-brand-avocado">مجاني 🚚</span>
+              </div>
+              <div class="pt-2.5 border-t border-brand-blushBorder flex items-center justify-between text-base sm:text-lg font-black text-brand-charcoal">
+                <span>المجموع النهائي:</span>
+                <span id="summaryTotal" class="text-brand-berry text-xl">494 درهم</span>
+              </div>
+            </div>
+
+            <!-- زر إرسال الطلب -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="animate-cta w-full bg-brand-pink hover:bg-brand-berry active:scale-[0.99] text-white font-black text-base sm:text-lg py-4 px-5 rounded-2xl shadow-pinkGlow transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <span>تأكيد الطلب الآن — الدفع عند الاستلام 🛒</span>
+            </button>
+          </form>
+
+          <!-- بطاقة تأكيد الطلب تظهر بعد الإرسال -->
+          <div id="orderSuccess" class="hidden bg-brand-avocadoBg border-2 border-brand-avocado rounded-3xl p-5 text-center space-y-4">
+            <div class="w-14 h-14 rounded-full bg-brand-avocado text-white flex items-center justify-center mx-auto shadow-md">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+
+            <div>
+              <span class="inline-block bg-white text-brand-avocadoDark text-xs font-black px-3.5 py-1 rounded-full border border-brand-avocadoBorder mb-1.5">
+                تم تجهيز طلبك للواتساب 💬
+              </span>
+              <h3 class="text-xl font-black text-brand-charcoal">
+                تم تسجيل طلبك بنجاح! 🎉
+              </h3>
+              <p class="text-xs sm:text-sm font-bold text-brand-charcoal/85 mt-1">
+                اضغطي على الزر الأخضر لتحت لإرسال تأكيد الطلب مباشرة إلى <strong>NATURA MAISON</strong> عبر واتساب:
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 border border-gray-200 text-right text-xs sm:text-sm space-y-2">
+              <div class="flex justify-between gap-2">
+                <span class="text-brand-charcoal/75 font-bold">الاسم الكامل:</span>
+                <span id="recName" class="font-black text-brand-charcoal">-</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-brand-charcoal/75 font-bold">رقم الهاتف:</span>
+                <span id="recPhone" dir="ltr" class="font-black text-brand-charcoal">-</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-brand-charcoal/75 font-bold">المدينة والعنوان:</span>
+                <span id="recCity" class="font-black text-brand-charcoal">-</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-brand-charcoal/75 font-bold">الفئة المعنية:</span>
+                <span id="recAudience" class="font-black text-brand-berry">-</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-brand-charcoal/75 font-bold">العرض المختار:</span>
+                <span id="recOffer" class="font-black text-brand-charcoal text-left">-</span>
+              </div>
+              <div class="flex justify-between pt-2.5 border-t border-dashed border-gray-200 font-black text-base">
+                <span class="text-brand-charcoal">المجموع عند الاستلام:</span>
+                <span id="recTotal" class="text-brand-berry">-</span>
+              </div>
+            </div>
+
+            <a
+              id="whatsappConfirmBtn"
+              href="https://wa.me/212641086290"
+              target="_top"
+              class="animate-cta w-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-black text-base sm:text-lg py-4 px-5 rounded-2xl shadow-lg flex items-center justify-center gap-2 transition-colors"
+            >
+              <span>إرسال تأكيد الطلب عبر واتساب 💬</span>
+            </a>
+
+            <button
+              type="button"
+              id="newOrderBtn"
+              class="w-full text-xs font-extrabold text-brand-charcoal/75 hover:text-brand-charcoal py-1 cursor-pointer"
+            >
+              تعديل المعلومات أو تسجيل طلب جديد
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 11. الفوتر (Footer)                                                   -->
+  <!-- ===================================================================== -->
+  <footer class="bg-white border-t border-brand-blushBorder py-10 px-4 text-center">
+    <div class="max-w-4xl mx-auto space-y-5">
+      <!-- شعار NATURA MAISON -->
+      <div class="flex justify-center">
+        <svg class="w-24 h-20" viewBox="0 0 180 148" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NATURA MAISON">
+          <path d="M74 12C60 28 53 45 53 57C53 62 43 68 43 72C43 75 49 77 51 80C48 83 49 86 52 88C49 91 50 94 54 96C52 102 56 108 65 108H88C75 90 72 56 74 12Z" fill="#E52675" />
+          <path d="M82 32C82 61 86 88 99 108H109C96 86 91 58 82 32Z" fill="#E52675" />
+          <path d="M128 49C121 33 124 17 131 10C137 19 137 35 128 49Z" fill="#E52675" />
+          <path d="M122 53C105 47 93 36 90 26C102 26 115 36 122 53Z" fill="#E52675" />
+          <path d="M134 53C143 37 156 29 167 30C163 42 150 50 134 53Z" fill="#E52675" />
+          <path d="M132 60C147 56 161 60 169 70C157 74 143 71 132 60Z" fill="#E52675" />
+          <path d="M129 66C141 72 148 84 147 97C135 93 128 80 129 66Z" fill="#E52675" />
+          <text x="90" y="128" text-anchor="middle" fill="#E52675" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" letter-spacing="2.5">NATURA</text>
+          <line x1="22" y1="138" x2="52" y2="138" stroke="#E52675" stroke-width="2" stroke-linecap="round" />
+          <text x="90" y="142" text-anchor="middle" fill="#E52675" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="11.5" letter-spacing="3.5">MAISON</text>
+          <line x1="128" y1="138" x2="158" y2="138" stroke="#E52675" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- شارات الثقة -->
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="bg-brand-avocadoBg text-brand-avocadoDark border border-brand-avocadoBorder text-xs font-black px-3.5 py-1.5 rounded-full">
+          🌿 طبيعية 100% وآمنة
+        </span>
+        <span class="bg-brand-blushCard text-brand-berry border border-brand-blushBorder text-xs font-black px-3.5 py-1.5 rounded-full">
+          🚚 توصيل مجاني لجميع المدن
+        </span>
+        <span class="bg-brand-goldBg text-brand-charcoal border border-brand-gold/30 text-xs font-black px-3.5 py-1.5 rounded-full">
+          🤝 الدفع نقداً عند الاستلام
+        </span>
+      </div>
+
+      <!-- روابط التواصل المباشرة -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a
+          href="tel:0641086290"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blush hover:bg-brand-blushCard border border-brand-blushBorder px-5 py-3 rounded-2xl text-xs sm:text-sm font-black text-brand-charcoal transition-colors"
+        >
+          <span>📞 الهاتف:</span>
+          <span dir="ltr" class="text-brand-berry">0641086290</span>
+        </a>
+
+        <a
+          href="https://wa.me/212641086290"
+          target="_top"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-avocadoBg hover:bg-brand-avocadoBorder/60 border border-brand-avocadoBorder px-5 py-3 rounded-2xl text-xs sm:text-sm font-black text-brand-avocadoDark transition-colors"
+        >
+          <span>💬 واتساب:</span>
+          <span dir="ltr">0641086290</span>
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blush hover:bg-brand-blushCard border border-brand-blushBorder px-5 py-3 rounded-2xl text-xs sm:text-sm font-black text-brand-charcoal transition-colors"
+        >
+          <span>📸 Instagram:</span>
+          <span dir="ltr" class="text-brand-berry">@NATURA MAISON</span>
+        </a>
+      </div>
+
+      <p class="text-xs font-bold text-brand-charcoal/70 pt-3 border-t border-brand-blushBorder">
+        © 2026 <span dir="ltr" class="font-bold text-brand-berry">NATURA MAISON</span>. جميع الحقوق محفوظة.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- 12. الشريط السفلي الثابت (Sticky Bottom Bar)                          -->
+  <!-- ===================================================================== -->
+  <div class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-brand-blushBorder px-3.5 py-2.5 shadow-[0_-8px_22px_rgba(36,20,28,0.1)]">
+    <div class="max-w-xl mx-auto flex items-center gap-2.5">
+      <a
+        href="#order-form"
+        class="animate-cta flex-1 bg-brand-pink hover:bg-brand-berry text-white font-black text-sm sm:text-base py-3.5 px-4 rounded-xl text-center shadow-pinkGlow transition-colors"
+      >
+        اطلبي اللحسة الآن — الدفع عند الاستلام 🛒
+      </a>
+
+      <a
+        href="https://wa.me/212641086290?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20NATURA%20MAISON%20%F0%9F%8C%BF%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D9%84%D8%AD%D8%B3%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D9%88%D9%8A%D8%A9"
+        target="_top"
+        aria-label="تواصل عبر واتساب 0641086290"
+        class="w-12 h-12 sm:w-14 sm:h-12 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white flex items-center justify-center shrink-0 shadow-md active:scale-95 transition-transform"
+      >
+        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 13. سكريبت التفاعل، الفئة المعنية، الواتساب و Google Sheets            -->
+  <!-- ===================================================================== -->
+  <script>
+    // إعدادات الربط: رقم الواتساب الرسمي ورابط Google Sheets الاختياري
+    const WHATSAPP_NUMBER = "212641086290";
+    const GOOGLE_SCRIPT_URL = "ضع_رابط_GOOGLE_SCRIPT_هنا";
+
+    // وصف مخصص لكل فئة معنية
+    const AUDIENCE_DETAILS = {
+      "امرأة": "معلقة كبيرة ورا كل وجبة لزيادة الوزن ونضارة البشرة والشعر بشكل طبيعي.",
+      "رجل": "معلقة كبيرة ورا كل وجبة + 3 معالق كبار ورا العشاء لبناء الجسم والطاقة.",
+      "مرضعة طفل": "آمنة 100% على الأم والرضيع، كتقوي الجسم وكتعاون على إدرار الحليب."
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      let selectedAudience = "امرأة";
+
+      const audienceCards = document.querySelectorAll(".audience-card");
+      const formAudienceBtns = document.querySelectorAll(".form-audience-btn");
+      const audienceTitleEl = document.getElementById("audience-selected-title");
+      const audienceDescEl = document.getElementById("audience-selected-desc");
+      const summaryAudienceEl = document.getElementById("summaryAudience");
+
+      // تحديث الفئة المعنية في جميع أقسام الصفحة وملخص الطلب
+      function updateAudience(category) {
+        if (!AUDIENCE_DETAILS[category]) return;
+        selectedAudience = category;
+
+        audienceCards.forEach((card) => {
+          const isMatch = card.dataset.audience === category;
+          const badge = card.querySelector(".audience-badge");
+          card.setAttribute("aria-pressed", isMatch ? "true" : "false");
+
+          if (isMatch) {
+            card.classList.remove("border-brand-blushBorder", "bg-brand-blush/60");
+            card.classList.add("border-brand-pink", "bg-brand-blushCard/80", "shadow-soft");
+            if (badge) {
+              badge.textContent = "✓ مختارة";
+              badge.className = "audience-badge mt-1.5 text-[10px] sm:text-xs font-extrabold bg-brand-pink text-white px-2.5 py-0.5 rounded-full";
+            }
+          } else {
+            card.classList.add("border-brand-blushBorder", "bg-brand-blush/60");
+            card.classList.remove("border-brand-pink", "bg-brand-blushCard/80", "shadow-soft");
+            if (badge) {
+              badge.textContent = "اضغط للاختيار";
+              badge.className = "audience-badge mt-1.5 text-[10px] sm:text-xs font-extrabold bg-white text-brand-charcoal/75 border border-brand-blushBorder px-2.5 py-0.5 rounded-full";
+            }
+          }
+        });
+
+        formAudienceBtns.forEach((btn) => {
+          const isMatch = btn.dataset.formAudience === category;
+          if (isMatch) {
+            btn.classList.remove("border-gray-200", "bg-gray-50", "text-brand-charcoal");
+            btn.classList.add("border-brand-pink", "bg-brand-blushCard", "text-brand-berry");
+          } else {
+            btn.classList.add("border-gray-200", "bg-gray-50", "text-brand-charcoal");
+            btn.classList.remove("border-brand-pink", "bg-brand-blushCard", "text-brand-berry");
+          }
+        });
+
+        audienceTitleEl.textContent = category;
+        audienceDescEl.textContent = AUDIENCE_DETAILS[category];
+        summaryAudienceEl.textContent = category;
+      }
+
+      audienceCards.forEach((card) => {
+        card.addEventListener("click", () => updateAudience(card.dataset.audience));
+      });
+
+      formAudienceBtns.forEach((btn) => {
+        btn.addEventListener("click", () => updateAudience(btn.dataset.formAudience));
+      });
+
+      // تحديث العروض الثلاثة وملخص الطلب المباشر
+      const formOfferLabels = document.querySelectorAll(".form-offer-label");
+      const formOfferRadios = document.querySelectorAll(".form-offer-radio");
+      const summaryOfferEl = document.getElementById("summaryOffer");
+      const summaryTotalEl = document.getElementById("summaryTotal");
+
+      function updateOfferSelection() {
+        const checkedRadio = document.querySelector(".form-offer-radio:checked");
+        if (!checkedRadio) return;
+
+        const label = checkedRadio.dataset.label || "العرض الثاني: 2 علب (494 درهم)";
+        const price = checkedRadio.dataset.price || "494";
+
+        formOfferLabels.forEach((lbl) => {
+          const radio = lbl.querySelector(".form-offer-radio");
+          const outer = lbl.querySelector(".offer-dot-outer");
+          const inner = lbl.querySelector(".offer-dot-inner");
+
+          if (radio && radio.checked) {
+            lbl.classList.remove("border-gray-200", "bg-gray-50/70");
+            lbl.classList.add("border-brand-pink", "bg-brand-blushCard/75", "shadow-sm");
+            outer.classList.remove("border-gray-400");
+            outer.classList.add("border-brand-pink");
+            inner.classList.remove("scale-0");
+            inner.classList.add("scale-100");
+          } else {
+            lbl.classList.add("border-gray-200", "bg-gray-50/70");
+            lbl.classList.remove("border-brand-pink", "bg-brand-blushCard/75", "shadow-sm");
+            outer.classList.add("border-gray-400");
+            outer.classList.remove("border-brand-pink");
+            inner.classList.add("scale-0");
+            inner.classList.remove("scale-100");
+          }
+        });
+
+        summaryOfferEl.textContent = label;
+        summaryTotalEl.textContent = `${price} درهم`;
+      }
+
+      formOfferRadios.forEach((radio) => {
+        radio.addEventListener("change", updateOfferSelection);
+      });
+
+      updateAudience("امرأة");
+      updateOfferSelection();
+
+      // التحقق من نموذج الطلب COD والإرسال للواتساب و Google Sheets
+      const orderForm = document.getElementById("orderForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const originalBtnHTML = submitBtn.innerHTML;
+
+      const fullNameInput = document.getElementById("fullName");
+      const phoneInput = document.getElementById("phone");
+      const cityInput = document.getElementById("city");
+
+      const errName = document.getElementById("errName");
+      const errPhone = document.getElementById("errPhone");
+      const errCity = document.getElementById("errCity");
+
+      const orderSuccessBox = document.getElementById("orderSuccess");
+      const newOrderBtn = document.getElementById("newOrderBtn");
+
+      fullNameInput.addEventListener("input", () => errName.classList.add("hidden"));
+      phoneInput.addEventListener("input", () => errPhone.classList.add("hidden"));
+      cityInput.addEventListener("input", () => errCity.classList.add("hidden"));
+
+      function isValidMoroccanPhone(rawPhone) {
+        const cleaned = rawPhone.replace(/[\s\-().]/g, "");
+        return /^(?:(?:\+|00)212|0)[67]\d{8}$/.test(cleaned);
+      }
+
+      orderForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const nameVal = fullNameInput.value.trim();
+        const phoneVal = phoneInput.value.trim();
+        const cityVal = cityInput.value.trim();
+
+        let isValid = true;
+
+        if (nameVal.length < 3) {
+          errName.classList.remove("hidden");
+          if (isValid) fullNameInput.focus();
+          isValid = false;
+        }
+
+        if (!isValidMoroccanPhone(phoneVal)) {
+          errPhone.classList.remove("hidden");
+          if (isValid) phoneInput.focus();
+          isValid = false;
+        }
+
+        if (cityVal.length < 2) {
+          errCity.classList.remove("hidden");
+          if (isValid) cityInput.focus();
+          isValid = false;
+        }
+
+        if (!isValid) return;
+
+        const checkedOffer = document.querySelector(".form-offer-radio:checked");
+        const offerLabel = checkedOffer ? checkedOffer.dataset.label : "العرض الثاني: 2 علب (494 درهم)";
+        const totalPrice = checkedOffer ? checkedOffer.dataset.price : "494";
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "<span>جاري تحويلك للواتساب...</span>";
+
+        const orderPayload = {
+          name: nameVal,
+          phone: phoneVal,
+          city: cityVal,
+          audience: selectedAudience,
+          offer: offerLabel,
+          total: `${totalPrice} درهم`
+        };
+
+        // إرسال البيانات لـ Google Sheets في حال تم وضع رابط حقيقي
+        if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith("https://")) {
+          fetch(GOOGLE_SCRIPT_URL.trim(), {
+            method: "POST",
+            mode: "no-cors",
+            keepalive: true,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8"
+            },
+            body: JSON.stringify(orderPayload)
+          }).catch((err) => console.error("Google Sheets error:", err));
+        }
+
+        // بناء رسالة واتساب منسقة بالعربية
+        const waMessage = encodeURIComponent(
+          `السلام عليكم NATURA MAISON 🌿، بغيت نأكد الطلب ديالي:\n` +
+          `• الاسم الكامل: ${nameVal}\n` +
+          `• رقم الهاتف: ${phoneVal}\n` +
+          `• المدينة والعنوان: ${cityVal}\n` +
+          `• العرض المختار: ${offerLabel}\n` +
+          `• الفئة المعنية: ${selectedAudience}\n` +
+          `• مصاريف التوصيل: مجاني 🚚\n` +
+          `• المجموع النهائي عند الاستلام: ${totalPrice} درهم`
+        );
+        const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
+
+        // تحديث بطاقة التأكيد
+        document.getElementById("recName").textContent = nameVal;
+        document.getElementById("recPhone").textContent = phoneVal;
+        document.getElementById("recCity").textContent = cityVal;
+        document.getElementById("recAudience").textContent = selectedAudience;
+        document.getElementById("recOffer").textContent = offerLabel;
+        document.getElementById("recTotal").textContent = `${totalPrice} درهم`;
+        document.getElementById("whatsappConfirmBtn").href = waUrl;
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHTML;
+
+        orderForm.classList.add("hidden");
+        orderSuccessBox.classList.remove("hidden");
+
+        // توجيه مباشر وفوري لواتساب بدون حظر النوافذ المنبثقة على الهاتف
+        window.location.href = waUrl;
+      });
+
+      newOrderBtn.addEventListener("click", () => {
+        orderSuccessBox.classList.add("hidden");
+        orderForm.classList.remove("hidden");
+      });
+    });
+  </script>
+
+  <!-- ===================================================================== -->
+  <!-- 14. إخفاء وحذف شارة Powered by Netlify أوتوماتيكياً من أسفل الشاشة   -->
+  <!-- ===================================================================== -->
+  <style>
+    iframe[src*="netlify"],
+    div[id*="netlify"],
+    a[href*="netlify.com"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  </style>
+  <script>
+    (function() {
+      function hideNetlifyBadge() {
+        document.querySelectorAll('iframe, div, a, aside').forEach(function(el) {
+          var txt = (el.textContent || '').trim();
+          var url = el.getAttribute('src') || el.getAttribute('href') || '';
+          if (txt === 'Powered by Netlify' || url.indexOf('netlify.com') !== -1) {
+            el.style.setProperty('display', 'none', 'important');
+            el.remove();
+          }
+        });
+      }
+      hideNetlifyBadge();
+      new MutationObserver(hideNetlifyBadge).observe(document.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    })();
+  </script>
+</body>
+</html>
